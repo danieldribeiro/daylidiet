@@ -5,6 +5,9 @@ import { useFonts, Nunito_400Regular, Nunito_700Bold } from '@expo-google-fonts/
 
 import theme from './src/theme'
 
+import { Loading } from '@components/Loading';
+import Home from '@screens/Home';
+
 export default function App() {
   const [fontsLoaded] = useFonts({ Nunito_400Regular, Nunito_700Bold });
 
@@ -15,7 +18,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Text>Open up App.tsx to start working on your app!</Text> : <Text>Carregando...</Text>}
+      {fontsLoaded ? <Home /> : <Loading />}
     </ThemeProvider>
   );
 }
