@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
-export const Container = styled.View<{percentage: number}>`
+export const Container = styled.TouchableOpacity<{percentage: number}>`
   width: 100%;
   height: 120px;
   padding: 30px 40px;

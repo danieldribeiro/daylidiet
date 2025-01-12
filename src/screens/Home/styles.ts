@@ -5,12 +5,12 @@ export const Container = styled(SafeAreaView)`
   flex: 1;
   background-color: ${({ theme }) => theme.COLORS.WHITE};
   padding: 24px;
+  gap: 40px;
 `
 
 export const Header = styled.View`
   flex-direction: row;
   justify-content: space-between;
-  flex: 1;
 `
 
 export const Logo = styled.Image`
@@ -21,4 +21,12 @@ export const Logo = styled.Image`
 export const UserPicture = styled.Image`
   width: 40px;
   height: 40px;
+`
+
+export const MealsContainer = styled.View`
+  gap: 20px;
+`
+
+export const Text = styled.Text`
+  font-size: 18px;
 `

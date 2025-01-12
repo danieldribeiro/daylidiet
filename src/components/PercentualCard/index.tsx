@@ -15,7 +15,7 @@ export default function PercentualCard({ percentage }: Props) {
           <ArrowDownLeft size={24} color="#BF3B44" weight="bold" />
         )}
       </IconWrapper>
-      <Percentage>{percentage >0 ? `${percentage}%` : '-'}</Percentage>
+      <Percentage>{percentage > 0 ? `${percentage}%` : '-'}</Percentage>
       <Text>das refeições dentro da dieta</Text>
     </Container>
   );
